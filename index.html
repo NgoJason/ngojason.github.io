@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Jason Ngo</title>
+<link rel="stylesheet" type="text/css" href="css/master.css">
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+
+</head>
+
+<body>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-12 ">
+          <div id="content">
+            <img src="https://srkheadshotday.com/wp-content/uploads/Paolo_Cerruti_Headshot_16H5589_Crop32-760x507.jpg">
+	        <h1 class ="text" onClick="newQuote()">JASON NGO</h1>
+	        <div class="line-break"></div>
+	        <h6 class="title" onClick="newQuote()">Aspiring Web Developer</h5>
+	        <div id="description">
+	        	<p id="bio"> A+ certified educator working on web development skills. Find me training martial arts or cooking a mean chili in my time off!
+	        	</p>
+	        </div>
+	        <div>
+	         <a href="https://www.dropbox.com/s/se2kkyuu1kqr6rd/jason_resume2018.pdf?dl=0" target="_blank" role="button" class="btn btn-primary rounded-0 btn-xl"style="font-size: 25px">RESUME <i class="fas fa-download"></i>
+	         </a>	
+	        </div>
+	        <div class="social-icons">
+	          <a href="https://www.linkedin.com/in/jason-ngo-809ab9a/" target="_blank"><i class="fab fa-linkedin extraClass"></i></a>
+	        </div>
+	        <div class="social-icons" id="email">
+	          <a href="mailto:jasonngo83@gmail.com" target="_blank"><i class="far fa-envelope extraClass"></i></a>
+	        </div>
+	      </div>
+	    </div>
+	  </div>
+    </div>
+
+
+<script
+  src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+  integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E="
+  crossorigin="anonymous"></script>
+<script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>	
+<script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+<script>
+
+  var quote = ['"Mistakes are always forgivable, if one has the courage to admit them."','"Imagination is more important than knowledge."','"Sometimes, you don\'t have to win, you cannot win. but that has nothing to do with losing."', '"Good judgment comes from experience, and a lot of that comes from bad judgment."'];
+  
+  var author = ['- Bruce Lee', '- Albert Einstein', '- Rickson Gracie', '- Will Rogers'];
+	
+	function newQuote(){
+		var rand = [Math.floor(Math.random() * quote.length)]; 
+		document.getElementById('bio').innerHTML = quote[rand].italics() +" "+ author[rand].bold();
+	}
+
+</script>
+
+
+</body>
+
+</html>
