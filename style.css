@@ -1,0 +1,132 @@
+body{
+	font-family: Monda;
+}
+
+
+h1{
+	padding-left: 1.5em;
+}
+.red{
+	background-color: red;
+}
+
+.gray{
+	background-color: #f1f2f2;
+}
+
+.blue{
+	background-color: #1c2450; 
+	color: white;
+}
+
+#orange{
+	background-color: orange;
+}
+
+.height{
+	height: 3em;
+}
+
+
+#about{
+	padding-left: 5em;
+	padding-right: 5em;
+	padding-top:  2em;
+	padding-bottom: 2em;
+}
+
+.footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   font-size: 2.2em;
+   color: white;
+   text-align: center;  
+   padding-top: 20px;
+}
+
+@media only screen and (max-width: 635px) {
+    .footer {
+        position: static;
+   		left: 0;
+  		bottom: 0;
+   		width: 100%;
+   	
+   		color: white;
+   		text-align: center;
+    }
+}
+
+#resume{
+	background-color: #f1f2f2;
+	color:black;
+	width: 10em;
+}
+
+@media only screen and (max-width: 448px) {
+    #resume {
+   		margin: 0 auto ;
+    }
+}
+
+.project-right{
+	text-align: right;
+
+}
+
+#leftImg{
+	padding-right: 1em;
+}
+
+
+
+.project-left{
+	text-align: left;
+}
+
+#rightImg{
+	padding-left: 1em;
+}
+
+
+@media only screen and (max-width: 635px) {
+    .project-left {
+        text-align: center;
+    }
+    .project-right{
+    	text-align: center;
+    }
+    #rightImg{
+    	padding-left: 0em;
+    }
+
+    #leftImg{
+    	padding-right: 0em;
+    }
+
+    
+}
+
+.skills{
+	text-align: center;
+	font-size: 4em;
+  height: 4em;
+
+}
+#leftSkills{
+	text-align: center;
+}
+.padding{
+	padding-top: 1em;
+	padding-bottom: 1em;
+}
+
+.card-img-top{
+	width:70%;
+}
+
+
+.social{
+  color: #f1f2f2;
+}

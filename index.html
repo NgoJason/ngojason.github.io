@@ -1,62 +1,82 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Jason Ngo</title>
-<link rel="stylesheet" type="text/css" href="css/master.css">
-<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+	<title>Jason Ngo</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Monda" rel="stylesheet">
 
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
-
 <body>
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col-12 ">
-          <div id="content">
-            <img src="https://srkheadshotday.com/wp-content/uploads/Paolo_Cerruti_Headshot_16H5589_Crop32-760x507.jpg">
-	        <h1 class ="text" onClick="newQuote()">JASON NGO</h1>
-	        <div class="line-break"></div>
-	        <h6 class="title" onClick="newQuote()">Aspiring Web Developer</h5>
-	        <div id="description">
-	        	<p id="bio"> A+ certified educator working on web development skills. Find me training martial arts or cooking a mean chili in my time off!
-	        	</p>
-	        </div>
-	        <div>
-	         <a href="https://www.dropbox.com/s/se2kkyuu1kqr6rd/jason_resume2018.pdf?dl=0" target="_blank" role="button" class="btn btn-primary rounded-0 btn-xl"style="font-size: 25px">RESUME <i class="fas fa-download"></i>
-	         </a>	
-	        </div>
-	        <div class="social-icons">
-	          <a href="https://www.linkedin.com/in/jason-ngo-809ab9a/" target="_blank"><i class="fab fa-linkedin extraClass"></i></a>
-	        </div>
-	        <div class="social-icons" id="email">
-	          <a href="mailto:jasonngo83@gmail.com" target="_blank"><i class="far fa-envelope extraClass"></i></a>
-	        </div>
-	      </div>
-	    </div>
-	  </div>
-    </div>
+ <nav class="navbar navbar-light blue">
+	<h1>JASON NGO</h1>
+     <a href="https://www.dropbox.com/s/se2kkyuu1kqr6rd/jason_resume2018.pdf?dl=0" target="_blank" role="button" class="btn btn-primary rounded-0 btn-xl" id="resume">RESUME <i class="fas fa-download"></i>
+	 </a>	
+ </nav>
+<div class ="container-fluid" id="container">
 
 
-<script
-  src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-  integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E="
-  crossorigin="anonymous"></script>
-<script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>	
-<script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
-<script>
+ <div class="row">
+   <div id ="about" class="gray col">I am a full-stack developer that loves creating programs and anything technology related. I have experience with the MEAN stack and work
+towards advancing my knowledge thereof. My previous profession was in education, where I worked with imparting
+concepts in a clear and understanding manner. My education background in business marketing makes me have the habit
+of developing code with SEO best practices. I believe myself a life long learner and you can find me researching
+programming topics, brazilian jiujitsu techniques, or bettering my craft of cooked foods!</div>
+ </div>
+ 
+ <div class="row">
+   <div id ="header" class="col height gray"><h1>Projects</h1></div>
+ </div>
 
-  var quote = ['"Mistakes are always forgivable, if one has the courage to admit them."','"Imagination is more important than knowledge."','"Sometimes, you don\'t have to win, you cannot win. but that has nothing to do with losing."', '"Good judgment comes from experience, and a lot of that comes from bad judgment."'];
-  
-  var author = ['- Bruce Lee', '- Albert Einstein', '- Rickson Gracie', '- Will Rogers'];
+ <div class="row">
+
+   <div class="gray col-sm project-right padding demo">
+   		
+
+			  <a href="https://thesnowlizard.github.io/StockPrice/"><img id="leftImg" class="card-img-top image" src="stock.png" alt="Stock Price Average Calculator"></a>
+ 
+
+
+   </div>
+
+
+   <div class="gray col-sm project-left padding">
+
+   		
+			  <a href="https://thesnowlizard.github.io/weather/"><img id="rightImg"  class="card-img-top" src="weather_thumb.png" alt="Weather app"></a>
+
 	
-	function newQuote(){
-		var rand = [Math.floor(Math.random() * quote.length)]; 
-		document.getElementById('bio').innerHTML = quote[rand].italics() +" "+ author[rand].bold();
-	}
-
-</script>
+	</div>		  
+ </div>
 
 
+ <div class="row">
+   <div id ="header" class="col height gray"><h1>Skills</h1></div>
+ </div>
+
+ <div class="row">
+   <div  class="gray skills col height"><i class="fab fa-js"></i> <i class="fab fa-css3-alt"></i> <i class="fab fa-html5"></i> <i class="fab fa-node-js"></i> <i class="fab fa-git-square"></i> <i class="fab fa-github-square"></i> </div>
+   
+ </div>
+
+
+
+
+
+ <div class="row">
+	<div id="footer" class="blue footer col height"><a  href="mailto:jasonngo83@gmail.com" target="_blank"><i class="far fa-envelope social "></i></a>
+	 		<a  href="https://www.linkedin.com/in/jason-ngo-809ab9a/" target="_blank"><i class="fab fa-linkedin social"></i></a> <a href="https://github.com/thesnowlizard/" target="_blank"><i class="fab fa-github-square social"></i></a>
+	 </div>
+ </div>
+
+</div>
+  <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
 </body>
-
 </html>
